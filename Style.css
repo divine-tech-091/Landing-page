@@ -51,12 +51,14 @@ ul li a{
   text-decoration: none;
 }
 .hero-text{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1em;
   padding:  100px 10px;
+}
+.hero-text article {
+  justify-self: center;
+  align-self: center;
 }
 .main-text{
   max-width: 490px;
@@ -199,6 +201,7 @@ ul li a{
 @media (max-width: 768px) {
   .btn-card{
     width: 100%;
+    white-space: nowrap;
   }
   .heading{
     padding-inline: 20px;
@@ -217,9 +220,13 @@ ul li a{
   }
   .card-container{
     margin-top: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   }
   .nav-heading{
     height: 55px;
     padding-inline: 20px;
+  }
+  .hero-text{
+    grid-template-columns: 1fr;
   }
 }
