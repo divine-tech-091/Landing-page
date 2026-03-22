@@ -28,10 +28,13 @@ body {
   left: 0;
   padding-inline: 50px;
 }
-.heading{
+#heading{
   background-color: #1F2937;
   padding-inline: 50px;
   position: relative;
+}
+#heading-link{
+  text-decoration: none;
 }
 .nav-heading h1 {
   color: #F9FAF8;
