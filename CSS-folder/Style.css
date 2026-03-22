@@ -40,6 +40,43 @@ body {
   color: #F9FAF8;
   font-size: 24px;
 }
+@media screen and (max-width: 500px){
+  #heading{
+    padding-inline: 15px;
+  }
+   #heading .nav-heading{
+    height: 50px;
+  }
+   nav ul li a{
+    font-size: 0.8em;
+    padding: 0;
+     margin-left: 0.3em;
+  }
+  .nav-heading h1{
+    font-size: 0.9em;
+  }
+  .main-text .para-text{
+    font-size: 0.9em;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .main-text .log-text{
+    font-size: 1.8em;
+  }
+   .main-text .btn{
+    padding: 8px 15px;
+    margin: 12px 0 2px 0;
+    outline-offset: 1.5px;
+    font-size: 0.7em;
+  }
+  #heading .hero-text{
+    padding: 80px 8px 30px 8px;
+  }
+  .image-container{
+    max-width: 300px;
+    height: 200px;
+  }
+}
 .sub-heading{
   color: #0f0;
 }
@@ -137,7 +174,32 @@ ul li a{
   padding-top: 40px;
 
 }
-.body-card{
+@media screen and (max-width: 500px){
+  #service-container .head-text{
+    padding: 3em 1em 0.5em 1em;
+
+    p{
+      font-size: 0.8em;
+    }
+  }
+  .head-text .serve{
+    font-size: 1.5em;
+  }
+  .card .img{
+    height: 180px;
+  }
+  .body-card .btn-card{
+     padding: 10px 12px;
+  }
+  .card .body-card{
+    gap: 1em;
+  }
+  .body-card .sub-body p{
+    margin-top: 3px;
+    font-size: 0.95em;
+  }
+}
+ .body-card{
   padding: 1em 1.2rem;
 
   h3{
@@ -211,6 +273,31 @@ ul li a{
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1em;
 }
+
+@media screen and (max-width: 500px) {
+  #testimonial .testy-head{
+    padding: 4em 0.8em 1em 0.8em;
+
+    h2{
+      font-size: 1.5em;
+    }
+  }
+   #testimonial .testy-head p{
+    font-size: 1em;
+    margin-top: 3px;
+   }
+
+   .testy-card div p{
+     font-size: 1em;
+   }
+  .testy-card .testy-names .pre{
+    font-size: 1em;
+    padding-top: 5px;
+  }
+  .testy-card div i {
+    font-size: 1.5em;
+  }
+}
 .testy-card i {
   font-size: 3em;
   margin-bottom: 0.5em;
@@ -231,6 +318,7 @@ ul li a{
   text-align: center;
   transition: border 0.5s;
   cursor: pointer;
+  justify-self: center;
 }
 .testy-card:hover{
   border: 2px solid orangered;
@@ -239,7 +327,6 @@ ul li a{
   justify-self: flex-end;
   
 }
-
  .testy-names .pre {
   padding-top: 10px;
   font-size: 1.3em;
@@ -276,6 +363,29 @@ ul li a{
   background-color: #F9FAF8;
   padding-inline: 40px;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 500px){
+  #contact-container .contact-head{
+    font-size: 1.5em;
+    padding: 2em 0.8em 1em 0.8em;
+   }
+   #contact-container{
+    padding-inline: 20px;
+    padding-bottom: 15px;
+   }
+   #contact-container .contact {
+    gap: 1em;
+    padding: 1.5em 1.5rem;
+   }
+   .contact .sub-contact{
+    font-size: 1.3em;
+   }
+   .contact p {
+    font-size: 1em;
+   }
+   .contact .contact-btn{
+    padding: 0.8em 3em;
+   }
 }
 .contact-head{
   text-align: center;
@@ -325,11 +435,18 @@ ul li a{
   background-color: #1F2937;
   padding: 2em;
 }
-.footer p {
+@media screen and (max-width: 500px) {
+  .copy {
+    font-size: 0.3em;
+    font-weight: 500;
+  }
+}
+.footer .copy {
   text-align: center;
   font-size: 1.2em;
   font-weight: 700;
   color: #F9FAF8;
+  height: 30px;
 }
 
 /* Scale to max-width 768 */
