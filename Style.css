@@ -316,6 +316,19 @@ ul li a{
 .contact-btn:active{
   opacity: 0.5;
 }
+
+/* footer */
+.footer{
+  background-color: #1F2937;
+  padding: 2em;
+}
+.footer p {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #F9FAF8;
+}
+
 /* Scale to max-width 768 */
 @media (max-width: 768px) {
   .btn-card{
