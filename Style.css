@@ -128,7 +128,7 @@ ul li a{
   justify-self: center;
 }
 #service-container{
-  background-color: #E5E7EB;
+  background-color: #F9FAF8;
   padding-bottom: 40px;
   padding-inline: 20px;
   padding-top: 40px;
@@ -152,6 +152,7 @@ ul li a{
 }
 .img:hover{
   transform: scale(1.1);
+  cursor: pointer;
 }
 .body-card{
   display: grid;
@@ -195,6 +196,76 @@ ul li a{
   display: grid;
   gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+/* Testimonial section layout */
+#testimonial{
+  background-color: #E5E7EB;
+  padding-inline: 40px;
+  padding-bottom: 40px;
+}
+.testy-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1em;
+}
+.testy-card i {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: orangered;
+  transition: color 0.5s;
+}
+.testy-card:hover i{
+  color: #0f0;
+}
+.testy-card{
+  height: auto;
+  max-width: 400px;
+  border: 2px solid #0f0;
+  padding: 1em 1.3rem;
+  border-radius: 1em;
+  background-color: #F9FAF8;
+  display: grid;
+  text-align: center;
+  transition: border 0.5s;
+  cursor: pointer;
+}
+.testy-card:hover{
+  border: 2px solid orangered;
+}
+.testy-names{
+  justify-self: flex-end;
+  
+}
+
+ .testy-names .pre {
+  padding-top: 10px;
+  font-size: 1.3em;
+  color: orangered;
+  font-style: italic;
+ }
+ .pre-under {
+  margin-right: 5px;
+ }
+
+.testy-card p{
+  font-size: 1.2em;
+  color: #11121a;
+}
+.testy-head{
+  padding: 3em 1em;
+  text-align: center;
+
+  p{
+    margin-top: 5px;
+    font-size: 1.2em;
+  }
+}
+.under-score{
+  margin-right: 10px;
+
+}
+.testy-head h2{
+  font-size: 2em;
 }
 
 /* Scale to max-width 768 */
